@@ -1,17 +1,17 @@
 #!/usr/bin/env bash
 echo "Downloading few Dependecies . . . ."
-git clone -b Xirlect --depth=1 https://github.com/ArifDroidDev/Kernel_Asus_X01AD X01AD
+git clone -b ginkgo --depth=1 https://github.com/ArifDroidDev/ginkgo_extrajoss ginkgo
 git clone -b master --depth=1 https://github.com/arifmndr17/Hyper-Clang clang
 
 # Main
-KERNEL_NAME=Xirlect🔥💦 # IMPORTANT ! Declare your kernel name
-KERNEL_ROOTDIR=$(pwd)/X01AD # IMPORTANT ! Fill with your kernel source root directory.
-DEVICE_CODENAME=X01AD # IMPORTANT ! Declare your device codename
-DEVICE_DEFCONFIG=GreenLight_defconfig # IMPORTANT ! Declare your kernel source defconfig file here.
+KERNEL_NAME=ExtraJoss # IMPORTANT ! Declare your kernel name
+KERNEL_ROOTDIR=$(pwd)/ginkgo # IMPORTANT ! Fill with your kernel source root directory.
+DEVICE_CODENAME=ginkgo # IMPORTANT ! Declare your device codename
+DEVICE_DEFCONFIG=ginkgo-perf_defconfig # IMPORTANT ! Declare your kernel source defconfig file here.
 CLANG_ROOTDIR=$(pwd)/clang # IMPORTANT! Put your clang directory here.
 export KBUILD_BUILD_USER=Arif # Change with your own name or else.
 export KBUILD_BUILD_HOST=DroidDev # Change with your own hostname.
-IMAGE=$(pwd)/X01AD/out/arch/arm64/boot/Image.gz-dtb
+IMAGE=$(pwd)/ginkgo/out/arch/arm64/boot/Image.gz-dtb
 DATE=$(date +"%F-%S")
 START=$(date +"%s")
 PATH="${PATH}:${CLANG_ROOTDIR}/bin"
