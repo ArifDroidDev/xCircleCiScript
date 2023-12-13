@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 echo "Downloading few Dependecies . . . ."
-git clone -b 14-tc --depth=1 https://github.com/ArifDroidDev/ginkgo_extrajoss ginkgo
+git clone -b ginkgo --depth=1 https://github.com/ArifDroidDev/ginkgo_extrajoss ginkgo
 git clone -b master --depth=1 https://github.com/arifmndr17/Hyper-Clang clang
 
 # Main
